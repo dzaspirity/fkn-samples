@@ -15,7 +15,11 @@ namespace FknSamples.Controllers
             return View(methods.Select(m => m.Name));
         }
 
-
+        public ActionResult Formspree()
+        {
+            ViewBag.Title = "Formspree";
+            return View();
+        }
 
     }
 }
