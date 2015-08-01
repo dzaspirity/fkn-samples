@@ -1,0 +1,13 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <ul>
+        @foreach (string actionName in Model)
+        {
+            <li>@Html.ActionLink(actionName, actionName)</li>
+        }
+    </ul>
+</div>
